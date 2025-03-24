@@ -4,6 +4,9 @@
   <a href="https://t.me/msavin_dev">
     <img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logoColor=white" alt="Telegram Badge"/>
   </a>
+  <a href="https://habr.com/ru/users/SavinMikhail/articles">
+    <img src="https://img.shields.io/badge/Habr-blue?style=for-the-badge&logoColor=white" alt="Habr Badge"/>
+  </a>
   <br>
   <img src="https://komarev.com/ghpvc/?username=savinmikhail&style=flat-square&color=blue" alt=""/>
 
