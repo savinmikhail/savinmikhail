@@ -1,7 +1,7 @@
 ### ❤️ PHP Symfony
 
 
-  <a href="https://t.me/msavin_dev">
+  <a href="https://t.me/+FjccONHV2boxMzQy">
     <img src="https://img.shields.io/badge/Telegram-blue?style=for-the-badge&logoColor=white" alt="Telegram Badge"/>
   </a>
   <a href="https://habr.com/ru/users/SavinMikhail/articles">
