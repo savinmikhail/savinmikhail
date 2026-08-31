@@ -30,6 +30,7 @@
 **Others**
 
 <a href="./contributions.md#docker"><img src="./assets/organizations/docker.svg" alt="@docker" height="38"></a>
+<a href="./contributions.md#golang"><img src="./assets/organizations/golang.svg" alt="@golang" height="38"></a>
 <a href="./contributions.md#openai"><img src="./assets/organizations/openai.svg" alt="@openai" height="38"></a>
 <a href="https://github.com/ClickHouse/ClickHouse/pull/66806"><img src="./assets/organizations/clickhouse.svg" alt="@ClickHouse" height="38"></a>
 <a href="https://github.com/swagger-api/swagger-editor/issues/5435"><img src="./assets/organizations/swagger-api.svg" alt="@swagger-api" height="38"></a>

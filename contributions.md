@@ -104,6 +104,11 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 - [Issue rectorphp/rector#8709: DataProviderAttributeToAnnotationRector](https://github.com/rectorphp/rector/issues/8709) — closed · 2024-07-03
 - [Issue rectorphp/rector#8704: PHP version-dependent constant handling](https://github.com/rectorphp/rector/issues/8704) — closed · 2024-06-29
 
+## golang
+
+- [Issue golang/go#81253: cmd/go: host-only .netrc entries do not match HTTPS proxy URLs with explicit ports](https://github.com/golang/go/issues/81253) — open · 2026-08-31
+- [Issue golang/go#81248: x/website: document GOAUTH for private module proxies](https://github.com/golang/go/issues/81248) — open · 2026-08-31
+
 ## opis
 
 - [PR opis/string#9: fix: suppress PHP 8.4 ArrayAccess deprecations](https://github.com/opis/string/pull/9) — open · 2026-04-24
