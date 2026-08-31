@@ -37,6 +37,8 @@ const hiddenOrganizations = new Set([
   'msavin-mentoring',
   'context-hub',
   'nazarov-community',
+  'auth0',
+  'amocrm',
 ]);
 
 if (!token) {

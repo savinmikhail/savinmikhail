@@ -36,9 +36,7 @@
 <a href="https://github.com/firecrawl/firecrawl-mcp-server/pull/129"><img src="./assets/organizations/firecrawl.svg" alt="@firecrawl" height="38"></a>
 <a href="https://github.com/ruby/rubygems/issues/9831"><img src="./assets/organizations/ruby.svg" alt="@ruby" height="38"></a>
 <a href="https://github.com/Checkmarx/kics/issues/8027"><img src="./assets/organizations/checkmarx.svg" alt="@Checkmarx" height="38"></a>
-<a href="./contributions.md#amocrm"><img src="./assets/organizations/amocrm.svg" alt="@amocrm" height="38"></a>
 <a href="./contributions.md#opensearch-project"><img src="./assets/organizations/opensearch-project.svg" alt="@opensearch-project" height="38"></a>
-<a href="https://github.com/auth0/symfony/pull/244"><img src="./assets/organizations/auth0.svg" alt="@auth0" height="38"></a>
 <!-- contributed-orgs:end -->
 
 Менторю по пыхе, заходи в [тг](https://t.me/+FjccONHV2boxMzQy)
