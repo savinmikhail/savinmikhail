@@ -1,0 +1,45 @@
+name: Update contributed organizations
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 5 * * 1'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-contributed-organizations
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate organization badges
+        run: node scripts/update-contributed-organizations.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: ${{ github.repository_owner }}
+
+      - name: Commit changes
+        run: |
+          if [[ -z "$(git status --porcelain -- README.md contributions.md assets/organizations)" ]]; then
+            echo 'No changes to commit.'
+            exit 0
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md contributions.md assets/organizations
+          git commit -m 'chore: update contributed organizations'
+          git push
