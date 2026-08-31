@@ -11,20 +11,33 @@ const readmePath = path.join(repositoryRoot, 'README.md');
 const detailsPath = path.join(repositoryRoot, 'contributions.md');
 const startMarker = '<!-- contributed-orgs:start -->';
 const endMarker = '<!-- contributed-orgs:end -->';
-const featuredOrganizations = [
+const phpEcosystemOrder = [
   'php',
   'symfony',
   'laravel',
   'composer',
   'doctrine',
-  'docker',
+  'phpstan',
+  'php-cs-fixer',
+  'vimeo',
+  'jetbrains',
+  'php-fig',
+  'rectorphp',
+  'phpmd',
+  'deptrac',
+  'amphp',
+  'infection',
+  'opis',
+  'psalm',
+  'typhoon-php',
+  'ergebnis',
 ];
+const featuredOthers = ['docker'];
 const hiddenOrganizations = new Set([
   'msavin-mentoring',
   'context-hub',
   'nazarov-community',
 ]);
-const maxVisibleOrganizations = 20;
 
 if (!token) {
   throw new Error('GITHUB_TOKEN or GH_TOKEN is required');
@@ -345,15 +358,24 @@ async function collectOrganizations() {
 }
 
 function organizationsForReadme(organizations) {
-  const featuredOrder = new Map(
-    featuredOrganizations.map((login, index) => [login.toLowerCase(), index]),
+  const visible = organizations.filter(
+    ({ login }) => !hiddenOrganizations.has(login.toLowerCase()),
   );
-
-  return organizations
-    .filter(({ login }) => !hiddenOrganizations.has(login.toLowerCase()))
+  const organizationsByLogin = new Map(
+    visible.map((organization) => [organization.login.toLowerCase(), organization]),
+  );
+  const phpEcosystem = phpEcosystemOrder
+    .map((login) => organizationsByLogin.get(login))
+    .filter(Boolean);
+  const phpLogins = new Set(phpEcosystemOrder);
+  const featuredOtherOrder = new Map(
+    featuredOthers.map((login, index) => [login.toLowerCase(), index]),
+  );
+  const others = visible
+    .filter(({ login }) => !phpLogins.has(login.toLowerCase()))
     .sort((left, right) => {
-      const leftFeatured = featuredOrder.get(left.login.toLowerCase());
-      const rightFeatured = featuredOrder.get(right.login.toLowerCase());
+      const leftFeatured = featuredOtherOrder.get(left.login.toLowerCase());
+      const rightFeatured = featuredOtherOrder.get(right.login.toLowerCase());
 
       if (leftFeatured !== undefined || rightFeatured !== undefined) {
         if (leftFeatured === undefined) return 1;
@@ -365,8 +387,9 @@ function organizationsForReadme(organizations) {
         || right.latestAt.localeCompare(left.latestAt)
         || right.contributionCount - left.contributionCount
         || left.login.localeCompare(right.login);
-    })
-    .slice(0, maxVisibleOrganizations);
+    });
+
+  return { phpEcosystem, others };
 }
 
 function escapeXml(value) {
@@ -481,7 +504,7 @@ async function writeIfChanged(filePath, content) {
   }
 }
 
-async function updateReadme(organizations) {
+async function updateReadme({ phpEcosystem, others }) {
   const readme = await readFile(readmePath, 'utf8');
   const start = readme.indexOf(startMarker);
   const end = readme.indexOf(endMarker);
@@ -490,7 +513,17 @@ async function updateReadme(organizations) {
     throw new Error(`README.md must contain ${startMarker} and ${endMarker}`);
   }
 
-  const generated = `${startMarker}\n${readmeBadges(organizations)}\n${endMarker}`;
+  const generated = [
+    startMarker,
+    '**PHP ecosystem**',
+    '',
+    readmeBadges(phpEcosystem),
+    '',
+    '**Others**',
+    '',
+    readmeBadges(others),
+    endMarker,
+  ].join('\n');
   const updated = `${readme.slice(0, start)}${generated}${readme.slice(end + endMarker.length)}`;
   await writeIfChanged(readmePath, updated);
 }
@@ -514,9 +547,13 @@ async function updateBadges(organizations) {
 }
 
 const organizations = await collectOrganizations();
-const visibleOrganizations = organizationsForReadme(organizations);
+const readmeOrganizations = organizationsForReadme(organizations);
+const visibleOrganizations = [
+  ...readmeOrganizations.phpEcosystem,
+  ...readmeOrganizations.others,
+];
 await updateBadges(visibleOrganizations);
-await updateReadme(visibleOrganizations);
+await updateReadme(readmeOrganizations);
 await writeIfChanged(detailsPath, detailsMarkdown(organizations));
 
 console.log(
