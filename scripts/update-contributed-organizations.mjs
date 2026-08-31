@@ -11,6 +11,20 @@ const readmePath = path.join(repositoryRoot, 'README.md');
 const detailsPath = path.join(repositoryRoot, 'contributions.md');
 const startMarker = '<!-- contributed-orgs:start -->';
 const endMarker = '<!-- contributed-orgs:end -->';
+const featuredOrganizations = [
+  'php',
+  'symfony',
+  'laravel',
+  'composer',
+  'doctrine',
+  'docker',
+];
+const hiddenOrganizations = new Set([
+  'msavin-mentoring',
+  'context-hub',
+  'nazarov-community',
+]);
+const maxVisibleOrganizations = 20;
 
 if (!token) {
   throw new Error('GITHUB_TOKEN or GH_TOKEN is required');
@@ -26,6 +40,7 @@ const contributionQuery = `
             nameWithOwner
             url
             visibility
+            stargazerCount
             owner {
               __typename
               login
@@ -44,6 +59,7 @@ const contributionQuery = `
             nameWithOwner
             url
             visibility
+            stargazerCount
             owner {
               __typename
               login
@@ -68,6 +84,7 @@ const contributionQuery = `
             nameWithOwner
             url
             visibility
+            stargazerCount
             owner {
               __typename
               login
@@ -91,6 +108,7 @@ const contributionQuery = `
             nameWithOwner
             url
             visibility
+            stargazerCount
             owner {
               __typename
               login
@@ -166,13 +184,20 @@ function organizationFor(groups, group) {
       login: owner.login,
       avatarUrl: owner.avatarUrl,
       contributionCount: 0,
+      maxRepositoryStars: 0,
       latestAt: '',
       evidence: new Map(),
       truncated: false,
     });
   }
 
-  return groups.get(key);
+  const organization = groups.get(key);
+  organization.maxRepositoryStars = Math.max(
+    organization.maxRepositoryStars,
+    group.repository.stargazerCount,
+  );
+
+  return organization;
 }
 
 function addEvidence(organization, evidence) {
@@ -317,6 +342,31 @@ async function collectOrganizations() {
       right.contributionCount - left.contributionCount
       || right.latestAt.localeCompare(left.latestAt)
       || left.login.localeCompare(right.login));
+}
+
+function organizationsForReadme(organizations) {
+  const featuredOrder = new Map(
+    featuredOrganizations.map((login, index) => [login.toLowerCase(), index]),
+  );
+
+  return organizations
+    .filter(({ login }) => !hiddenOrganizations.has(login.toLowerCase()))
+    .sort((left, right) => {
+      const leftFeatured = featuredOrder.get(left.login.toLowerCase());
+      const rightFeatured = featuredOrder.get(right.login.toLowerCase());
+
+      if (leftFeatured !== undefined || rightFeatured !== undefined) {
+        if (leftFeatured === undefined) return 1;
+        if (rightFeatured === undefined) return -1;
+        return leftFeatured - rightFeatured;
+      }
+
+      return right.maxRepositoryStars - left.maxRepositoryStars
+        || right.latestAt.localeCompare(left.latestAt)
+        || right.contributionCount - left.contributionCount
+        || left.login.localeCompare(right.login);
+    })
+    .slice(0, maxVisibleOrganizations);
 }
 
 function escapeXml(value) {
@@ -464,8 +514,12 @@ async function updateBadges(organizations) {
 }
 
 const organizations = await collectOrganizations();
-await updateBadges(organizations);
-await updateReadme(organizations);
+const visibleOrganizations = organizationsForReadme(organizations);
+await updateBadges(visibleOrganizations);
+await updateReadme(visibleOrganizations);
 await writeIfChanged(detailsPath, detailsMarkdown(organizations));
 
-console.log(`Updated ${organizations.length} organization badges for @${username}.`);
+console.log(
+  `Updated ${visibleOrganizations.length} visible organization badges `
+  + `from ${organizations.length} public organizations for @${username}.`,
+);
