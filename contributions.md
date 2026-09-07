@@ -32,7 +32,7 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 
 ## composer
 
-- [Issue composer/docker#458: Docker Official Image tags still on 2.10.2 after the 2.10.3 release](https://github.com/composer/docker/issues/458) — open · 2026-08-31
+- [Issue composer/docker#458: Docker Official Image tags still on 2.10.2 after the 2.10.3 release](https://github.com/composer/docker/issues/458) — closed · 2026-08-31
 - [1 commit to composer/packagist](https://github.com/composer/packagist) · 2026-07-21
 - [PR composer/packagist#1788: Fix overlapping X-axis labels in package stats charts](https://github.com/composer/packagist/pull/1788) — merged · 2026-07-11
 - [Issue composer/packagist#1787: Package stats chart X-axis labels overlap near the right edge](https://github.com/composer/packagist/issues/1787) — closed · 2026-07-11
@@ -107,7 +107,7 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 ## golang
 
 - [Issue golang/go#81253: cmd/go: host-only .netrc entries do not match HTTPS proxy URLs with explicit ports](https://github.com/golang/go/issues/81253) — open · 2026-08-31
-- [Issue golang/go#81248: x/website: document GOAUTH for private module proxies](https://github.com/golang/go/issues/81248) — open · 2026-08-31
+- [Issue golang/go#81248: x/website: document GOAUTH for private module proxies](https://github.com/golang/go/issues/81248) — closed · 2026-08-31
 
 ## opis
 
