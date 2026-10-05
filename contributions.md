@@ -2,11 +2,6 @@
 
 This page is generated from GitHub's public contribution data for [@savinmikhail](https://github.com/savinmikhail). Opened issues and pull requests are included even when they are not merged, matching GitHub's contribution model.
 
-## msavin-mentoring
-
-- [47 commits to msavin-mentoring/call_record_to_telegram](https://github.com/msavin-mentoring/call_record_to_telegram) · 2026-09-07
-- [2 commits to msavin-mentoring/.github](https://github.com/msavin-mentoring/.github) · 2026-01-25
-
 ## context-hub
 
 - [Issue context-hub/generator#288: Checking out project from a list is not convinient](https://github.com/context-hub/generator/issues/288) — closed · 2025-10-25
@@ -113,6 +108,10 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 
 - [PR opis/string#9: fix: suppress PHP 8.4 ArrayAccess deprecations](https://github.com/opis/string/pull/9) — open · 2026-04-24
 - [Issue opis/string#8: PHP 8.4 deprecation: UnicodeString ArrayAccess methods are missing void return types](https://github.com/opis/string/issues/8) — open · 2026-04-24
+
+## msavin-mentoring
+
+- [2 commits to msavin-mentoring/.github](https://github.com/msavin-mentoring/.github) · 2026-01-25
 
 ## docker
 
