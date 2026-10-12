@@ -65,7 +65,7 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 
 ## openai
 
-- [Issue openai/codex#40863: \[TUI 0.149.1\]\[JetBrains-JediTerm\] Unit suffixes intermittently disappear during redraws](https://github.com/openai/codex/issues/40863) — open · 2026-08-26
+- [Issue openai/codex#40863: \[TUI 0.149.1\]\[JetBrains-JediTerm\] Unit suffixes intermittently disappear during redraws](https://github.com/openai/codex/issues/40863) — closed · 2026-08-26
 - [Issue openai/codex#16677: TUI shows expired promotional tip after April 2nd](https://github.com/openai/codex/issues/16677) — closed · 2026-04-03
 - [Issue openai/codex#15511: Weird symbols and lines being printed in  terminal on each answer](https://github.com/openai/codex/issues/15511) — closed · 2026-03-23
 
