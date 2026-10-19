@@ -63,6 +63,12 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 - [PR amocrm/amocrm-api-php#562: Issue 561](https://github.com/amocrm/amocrm-api-php/pull/562) — merged · 2024-04-25
 - [Issue amocrm/amocrm-api-php#561: Events Filter](https://github.com/amocrm/amocrm-api-php/issues/561) — closed · 2024-04-25
 
+## docker
+
+- [Issue docker/compose#14356: \[FEATURE\] Declare sensitive variables and redact config output by default](https://github.com/docker/compose/issues/14356) — open · 2026-10-17
+- [Issue docker/docs#22307: `com.docker.diagnose check` is deprecated on linux](https://github.com/docker/docs/issues/22307) — closed · 2025-03-25
+- [Issue docker/docs#22293: com.docker.diagnose check is deprecated on linux](https://github.com/docker/docs/issues/22293) — closed · 2025-03-22
+
 ## openai
 
 - [Issue openai/codex#40863: \[TUI 0.149.1\]\[JetBrains-JediTerm\] Unit suffixes intermittently disappear during redraws](https://github.com/openai/codex/issues/40863) — closed · 2026-08-26
@@ -113,11 +119,6 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 
 - [2 commits to msavin-mentoring/.github](https://github.com/msavin-mentoring/.github) · 2026-01-25
 
-## docker
-
-- [Issue docker/docs#22307: `com.docker.diagnose check` is deprecated on linux](https://github.com/docker/docs/issues/22307) — closed · 2025-03-25
-- [Issue docker/docs#22293: com.docker.diagnose check is deprecated on linux](https://github.com/docker/docs/issues/22293) — closed · 2025-03-22
-
 ## JetBrains
 
 - [PR JetBrains/phpstorm-stubs#1719: feat: add .gitattributes for export-ignore](https://github.com/JetBrains/phpstorm-stubs/pull/1719) — merged · 2025-02-22
@@ -132,6 +133,10 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 
 - [1 commit to ClickHouse/ClickHouse](https://github.com/ClickHouse/ClickHouse) · 2024-07-21
 - [PR ClickHouse/ClickHouse#66806: Translate playground page in ru locale to russian](https://github.com/ClickHouse/ClickHouse/pull/66806) — merged · 2024-07-21
+
+## umami-software
+
+- [PR umami-software/umami#4635: fix(i18n): correct Russian translation of Breakdown](https://github.com/umami-software/umami/pull/4635) — open · 2026-10-17
 
 ## ruby
 
