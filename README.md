@@ -1,6 +1,25 @@
 ### ❤️ PHP Symfony
 
-![SavinMikhail's github stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=savinmikhail&theme=transparent)
+<p align="center">
+  <a href="https://github.com/savinmikhail">
+    <img height="170" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=savinmikhail&show_icons=true&theme=transparent" alt="Mikhail Savin's GitHub stats" />
+  </a>
+  <a href="https://github.com/savinmikhail">
+    <img height="170" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=savinmikhail&layout=compact&theme=transparent" alt="Most used languages" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/savinmikhail">
+    <img src="https://streak-stats.demolab.com/?user=savinmikhail&theme=transparent" alt="GitHub contribution streak" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/savinmikhail">
+    <img src="https://github-trophies.vercel.app/?username=savinmikhail&theme=darkhub&no-frame=true&row=1&column=7" alt="GitHub trophies" />
+  </a>
+</p>
 
 ### Organizations I contributed to
 
