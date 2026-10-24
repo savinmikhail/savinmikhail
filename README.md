@@ -5,7 +5,7 @@
     <img height="170" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=savinmikhail&show_icons=true&theme=transparent" alt="Mikhail Savin's GitHub stats" />
   </a>
   <a href="https://github.com/savinmikhail">
-    <img height="170" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=savinmikhail&layout=compact&theme=transparent" alt="Most used languages" />
+    <img height="170" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=savinmikhail&layout=compact&theme=transparent&exclude_repo=paisa-ui" alt="Most used languages" />
   </a>
 </p>
 
