@@ -45,7 +45,7 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 ## doctrine
 
 - [PR doctrine/orm#12513: Add @no-named-arguments to QueryBuilder select and group helpers](https://github.com/doctrine/orm/pull/12513) — open · 2026-06-18
-- [PR doctrine/orm#12512: Add @no-named-arguments to QueryBuilder condition helpers](https://github.com/doctrine/orm/pull/12512) — open · 2026-06-18
+- [PR doctrine/orm#12512: Add @no-named-arguments to QueryBuilder condition helpers](https://github.com/doctrine/orm/pull/12512) — merged · 2026-06-18
 - [Issue doctrine/orm#12511: Consider adding @no-named-arguments to QueryBuilder helper methods](https://github.com/doctrine/orm/issues/12511) — open · 2026-06-18
 - [1 commit to doctrine/instantiator](https://github.com/doctrine/instantiator) · 2025-04-24
 - [PR doctrine/instantiator#126: feat(git): add docs/ and CONTRIBUTING.md to export ignore](https://github.com/doctrine/instantiator/pull/126) — merged · 2025-04-23
@@ -107,7 +107,7 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 
 ## golang
 
-- [Issue golang/go#81253: cmd/go: host-only .netrc entries do not match HTTPS proxy URLs with explicit ports](https://github.com/golang/go/issues/81253) — open · 2026-08-31
+- [Issue golang/go#81253: cmd/go: host-only .netrc entries do not match HTTPS proxy URLs with explicit ports](https://github.com/golang/go/issues/81253) — closed · 2026-08-31
 - [Issue golang/go#81248: x/website: document GOAUTH for private module proxies](https://github.com/golang/go/issues/81248) — closed · 2026-08-31
 
 ## opis
