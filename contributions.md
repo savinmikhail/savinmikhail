@@ -22,7 +22,7 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 - [1 commit to symfony/webpack-encore-bundle](https://github.com/symfony/webpack-encore-bundle) · 2025-04-29
 - [PR symfony/webpack-encore-bundle#245: Unused files in distribution not ignored for export in gitignore ](https://github.com/symfony/webpack-encore-bundle/pull/245) — merged · 2025-04-28
 - [Issue symfony/webpack-encore-bundle#244: Unused files in distribution not ignored for export in gitignore](https://github.com/symfony/webpack-encore-bundle/issues/244) — closed · 2025-04-26
-- [Issue symfony/maker-bundle#1694: Unused files in distribution not ignored for export in gitignore](https://github.com/symfony/maker-bundle/issues/1694) — open · 2025-04-26
+- [Issue symfony/maker-bundle#1694: Unused files in distribution not ignored for export in gitignore](https://github.com/symfony/maker-bundle/issues/1694) — closed · 2025-04-26
 - [Issue symfony/maker-bundle#1693: Link to the documentation from README returns 404 error](https://github.com/symfony/maker-bundle/issues/1693) — closed · 2025-04-26
 
 ## composer
@@ -44,9 +44,9 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 
 ## doctrine
 
-- [PR doctrine/orm#12513: Add @no-named-arguments to QueryBuilder select and group helpers](https://github.com/doctrine/orm/pull/12513) — open · 2026-06-18
+- [PR doctrine/orm#12513: Add @no-named-arguments to QueryBuilder select and group helpers](https://github.com/doctrine/orm/pull/12513) — merged · 2026-06-18
 - [PR doctrine/orm#12512: Add @no-named-arguments to QueryBuilder condition helpers](https://github.com/doctrine/orm/pull/12512) — merged · 2026-06-18
-- [Issue doctrine/orm#12511: Consider adding @no-named-arguments to QueryBuilder helper methods](https://github.com/doctrine/orm/issues/12511) — open · 2026-06-18
+- [Issue doctrine/orm#12511: Consider adding @no-named-arguments to QueryBuilder helper methods](https://github.com/doctrine/orm/issues/12511) — closed · 2026-06-18
 - [1 commit to doctrine/instantiator](https://github.com/doctrine/instantiator) · 2025-04-24
 - [PR doctrine/instantiator#126: feat(git): add docs/ and CONTRIBUTING.md to export ignore](https://github.com/doctrine/instantiator/pull/126) — merged · 2025-04-23
 
