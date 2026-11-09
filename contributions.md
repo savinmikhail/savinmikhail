@@ -14,6 +14,11 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 - [PR context-hub/generator#268: Add named arguments via dedicated rector rule](https://github.com/context-hub/generator/pull/268) — closed · 2025-10-03
 - [Issue context-hub/generator#266: \[Discussion\] Support codex's mcp config?](https://github.com/context-hub/generator/issues/266) — closed · 2025-10-03
 
+## msavin-mentoring
+
+- [11 commits to msavin-mentoring/resume-workbench-guide](https://github.com/msavin-mentoring/resume-workbench-guide) · 2026-11-03
+- [2 commits to msavin-mentoring/.github](https://github.com/msavin-mentoring/.github) · 2026-01-25
+
 ## symfony
 
 - [PR symfony/symfony-docs#22849:  Fix PHP preloading link](https://github.com/symfony/symfony-docs/pull/22849) — merged · 2026-08-27
@@ -114,10 +119,6 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 
 - [PR opis/string#9: fix: suppress PHP 8.4 ArrayAccess deprecations](https://github.com/opis/string/pull/9) — open · 2026-04-24
 - [Issue opis/string#8: PHP 8.4 deprecation: UnicodeString ArrayAccess methods are missing void return types](https://github.com/opis/string/issues/8) — open · 2026-04-24
-
-## msavin-mentoring
-
-- [2 commits to msavin-mentoring/.github](https://github.com/msavin-mentoring/.github) · 2026-01-25
 
 ## JetBrains
 
