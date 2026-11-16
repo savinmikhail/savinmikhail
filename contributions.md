@@ -30,6 +30,15 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 - [Issue symfony/maker-bundle#1694: Unused files in distribution not ignored for export in gitignore](https://github.com/symfony/maker-bundle/issues/1694) — closed · 2025-04-26
 - [Issue symfony/maker-bundle#1693: Link to the documentation from README returns 404 error](https://github.com/symfony/maker-bundle/issues/1693) — closed · 2025-04-26
 
+## doctrine
+
+- [2 commits to doctrine/orm](https://github.com/doctrine/orm) · 2026-06-19
+- [PR doctrine/orm#12513: Add @no-named-arguments to QueryBuilder select and group helpers](https://github.com/doctrine/orm/pull/12513) — merged · 2026-06-18
+- [PR doctrine/orm#12512: Add @no-named-arguments to QueryBuilder condition helpers](https://github.com/doctrine/orm/pull/12512) — merged · 2026-06-18
+- [Issue doctrine/orm#12511: Consider adding @no-named-arguments to QueryBuilder helper methods](https://github.com/doctrine/orm/issues/12511) — closed · 2026-06-18
+- [1 commit to doctrine/instantiator](https://github.com/doctrine/instantiator) · 2025-04-24
+- [PR doctrine/instantiator#126: feat(git): add docs/ and CONTRIBUTING.md to export ignore](https://github.com/doctrine/instantiator/pull/126) — merged · 2025-04-23
+
 ## composer
 
 - [Issue composer/docker#458: Docker Official Image tags still on 2.10.2 after the 2.10.3 release](https://github.com/composer/docker/issues/458) — closed · 2026-08-31
@@ -46,14 +55,6 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 - [PR vimeo/psalm#11407: InvalidNamedArgument "objectOrClass" for ReflectionClass constructor due to incorrect stub](https://github.com/vimeo/psalm/pull/11407) — merged · 2025-04-26
 - [Issue vimeo/psalm#11406: InvalidNamedArgument "objectOrClass" for ReflectionClass constructor due to incorrect stub](https://github.com/vimeo/psalm/issues/11406) — closed · 2025-04-26
 - [2 commits to vimeo/psalm](https://github.com/vimeo/psalm) · 2025-04-26
-
-## doctrine
-
-- [PR doctrine/orm#12513: Add @no-named-arguments to QueryBuilder select and group helpers](https://github.com/doctrine/orm/pull/12513) — merged · 2026-06-18
-- [PR doctrine/orm#12512: Add @no-named-arguments to QueryBuilder condition helpers](https://github.com/doctrine/orm/pull/12512) — merged · 2026-06-18
-- [Issue doctrine/orm#12511: Consider adding @no-named-arguments to QueryBuilder helper methods](https://github.com/doctrine/orm/issues/12511) — closed · 2026-06-18
-- [1 commit to doctrine/instantiator](https://github.com/doctrine/instantiator) · 2025-04-24
-- [PR doctrine/instantiator#126: feat(git): add docs/ and CONTRIBUTING.md to export ignore](https://github.com/doctrine/instantiator/pull/126) — merged · 2025-04-23
 
 ## PHP-CS-Fixer
 
@@ -125,6 +126,11 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 - [PR JetBrains/phpstorm-stubs#1719: feat: add .gitattributes for export-ignore](https://github.com/JetBrains/phpstorm-stubs/pull/1719) — merged · 2025-02-22
 - [1 commit to JetBrains/phpstorm-stubs](https://github.com/JetBrains/phpstorm-stubs) · 2025-02-22
 
+## psalm
+
+- [1 commit to psalm/psalm-plugin-skeleton](https://github.com/psalm/psalm-plugin-skeleton) · 2024-11-27
+- [PR psalm/psalm-plugin-skeleton#14: sync Plugin.php with its interface](https://github.com/psalm/psalm-plugin-skeleton/pull/14) — merged · 2024-11-27
+
 ## phpmd
 
 - [PR phpmd/phpmd#1199: fix(bin): printing php setup for cli arguments message](https://github.com/phpmd/phpmd/pull/1199) — merged · 2024-08-04
@@ -174,10 +180,6 @@ This page is generated from GitHub's public contribution data for [@savinmikhail
 ## swagger-api
 
 - [Issue swagger-api/swagger-editor#5435: Make window with errors expandable](https://github.com/swagger-api/swagger-editor/issues/5435) — open · 2025-04-17
-
-## psalm
-
-- [PR psalm/psalm-plugin-skeleton#14: sync Plugin.php with its interface](https://github.com/psalm/psalm-plugin-skeleton/pull/14) — open · 2024-11-27
 
 ## deptrac
 
